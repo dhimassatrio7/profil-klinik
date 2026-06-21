@@ -9,7 +9,7 @@ $description = $pengaturan?->deskripsi_singkat
 
     <main>
         <section class="relative overflow-hidden bg-white">
-            <div class="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-blue-50 to-white"></div>
+            <div class="absolute inset-x-0 top-0 h-48 from-blue-50 to-white"></div>
 
             <x-frontend.container class="relative grid min-h-[calc(100vh-4rem)] items-center gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-16">
                 <div class="max-w-3xl">

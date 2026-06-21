@@ -14,4 +14,5 @@ Route::get('/dokter/{id}', [HomeController::class, 'showDokter'])->name('dokter.
 Route::get('/artikel', [HomeController::class, 'allArtikel'])->name('artikel.index');
 Route::get('/artikel/{slug}', [HomeController::class, 'showArtikel'])->name('artikel.show');
 
+Route::get('/tentang', [HomeController::class, 'tentang'])->name('tentang');
 Route::get('/kontak', [HomeController::class, 'kontak'])->name('kontak');

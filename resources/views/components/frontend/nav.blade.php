@@ -5,7 +5,7 @@
         <!-- Logo -->
         <a href="{{ route('home') }}" class="flex min-w-0 items-center gap-3">
             @if ($pengaturan?->logo)
-            <img src="{{ asset('storage/' . $pengaturan->logo) }}" alt="{{ $pengaturan->nama_klinik }}" class="h-10 w-10 rounded-lg object-cover">
+            <img src="{{ asset('storage/' . $pengaturan->logo) }}" alt="{{ $pengaturan->nama_klinik }}" class="h-10 w-10 ">
             @else
             <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-700 text-sm font-bold text-white">KM</span>
             @endif
@@ -19,6 +19,7 @@
             <a href="{{ route('dokter.index') }}" class="{{ request()->routeIs('dokter.*') ? 'text-blue-700' : 'hover:text-blue-700' }}">Dokter</a>
             <a href="{{ route('artikel.index') }}" class="{{ request()->routeIs('artikel.*') ? 'text-blue-700' : 'hover:text-blue-700' }}">Artikel</a>
             <a href="{{ route('kontak') }}" class="{{ request()->routeIs('kontak') ? 'text-blue-700' : 'hover:text-blue-700' }}">Kontak</a>
+            <a href="{{ route('tentang') }}" class="{{ request()->routeIs('tentang') ? 'text-blue-700' : 'hover:text-blue-700' }}">Tentang Kami</a>
         </nav>
 
         <!-- CTA & Hamburger -->
@@ -46,6 +47,7 @@
             <a href="{{ route('dokter.index') }}" class="flex h-11 items-center rounded-lg px-4 text-sm font-medium {{ request()->routeIs('dokter.*') ? 'bg-blue-50 text-blue-700' : 'text-slate-600 hover:bg-slate-50' }}">Dokter</a>
             <a href="{{ route('artikel.index') }}" class="flex h-11 items-center rounded-lg px-4 text-sm font-medium {{ request()->routeIs('artikel.*') ? 'bg-blue-50 text-blue-700' : 'text-slate-600 hover:bg-slate-50' }}">Artikel</a>
             <a href="{{ route('kontak') }}" class="flex h-11 items-center rounded-lg px-4 text-sm font-medium {{ request()->routeIs('kontak') ? 'bg-blue-50 text-blue-700' : 'text-slate-600 hover:bg-slate-50' }}">Kontak</a>
+            <a href="{{ route('tentang') }}" class="flex h-11 items-center rounded-lg px-4 text-sm font-medium {{ request()->routeIs('tentang') ? 'bg-blue-50 text-blue-700' : 'text-slate-600 hover:bg-slate-50' }}">Tentang Kami</a>
 
             <div class="mt-4 border-t border-slate-100 pt-4">
                 <a href="{{ $pengaturan?->whatsapp ? 'https://wa.me/' . $pengaturan->whatsapp : route('kontak') }}" class="flex h-11 items-center justify-center rounded-lg bg-blue-700 text-sm font-bold text-white shadow-lg shadow-blue-900/10">

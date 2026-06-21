@@ -85,4 +85,10 @@ class HomeController extends Controller
         $pengaturan = Pengaturan::query()->first();
         return view('frontend.kontak', compact('pengaturan'));
     }
+
+    public function tentang(): View
+    {
+        $pengaturan = Pengaturan::query()->first();
+        return view('frontend.tentang', compact('pengaturan'));
+    }
 }
